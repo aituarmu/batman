@@ -25,6 +25,8 @@ body {
   justify-content: space-between;
   /* внутрениий отступ сверху */
   padding-top: 45px;
+  /* для адаптивности, сжимается на мобилках */
+  margin-bottom: 30%; 
 }
 
 .logo {
@@ -86,4 +88,90 @@ body {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* MAIN */
+
+.title {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 7px;
+}
+
+.title-en {
+  /* <span> строчный, поэтому ставим inline block, чтобы margin-bottom сработал */
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
+  color: #787878;
+  margin-bottom: 38px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+}
+.tag {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  background: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.country {
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 33px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  text-decoration: none;
+}
+/* play logo */
+.play:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  text-decoration: none;
+}
+/* Logo - Подробнее */
+.more:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 15px;
+  /* image lifehack */
+  transform: rotate(90deg);
 }
