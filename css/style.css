@@ -9,6 +9,8 @@ body {
   background-image: url('../img/main-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
+  /* for big screens */
+  background-size: 100%;
 }
 
 .container {
@@ -221,6 +223,10 @@ body {
   flex: 0.97;
 }
 
+.bookmark-added {
+  vertical-align: middle;
+}
+
 .full-content {
   display: flex;
   justify-content: space-between;
@@ -246,3 +252,16 @@ body {
   line-height: 21px;
 }
 
+.tabs :last-child {
+  margin:0;
+  }
+
+
+  @media (max-width: 765px) {
+    /* for small screens - background  */
+    body {
+      background-size: 100%;
+    }
+  }
+
+  
