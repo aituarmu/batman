@@ -241,6 +241,11 @@ body {
 
 .tabs-content {
   margin-right: 70px;
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .tabs {
@@ -277,7 +282,8 @@ body {
   }
 
   .subscribe-form {
-    display: flex;
+    /* display: flex; */
+    position: relative;
     margin-bottom: 48px;
   }
 
@@ -290,11 +296,14 @@ body {
   }
 
   .subscribe-input {
+    /* interesting */
+      width: calc(100%-5px);
       /* Фоновый цвет */
       background: rgba(196, 196, 196, 0.5);
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
       padding: 12px 18px;
+      height: 40px;
       /* убираем рамку */
       border: none;
       color: #aeae;
@@ -302,10 +311,16 @@ body {
   }
 
   .subscribe-button {
+      position: absolute;
       background: #ff8f27;
       border-radius: 0px 5px 5px 0px;
       border: none;
-      padding: 12px;
+      height: 40px;
+      width: 40px;
+      top: 0;
+      right: 0;
+
+      
   }
 
  /* @media (max-width: 765px) { */
